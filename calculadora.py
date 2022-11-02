@@ -21,10 +21,14 @@ def raiz(e):
     raizDoValor = math.sqrt(e)
     print('Raiz quadrada de {} = {}'.format(e, raizDoValor))
 
+def raizCub(e):
+    raizCubDoValor = math.cbrt(e)
+    print('Raiz cúbica de {} = {}'.format(e, raizCubDoValor))
+
 def potencia(f):
-    exponente = int(input('Exponente: '))
-    potenciaDoValor = f ** exponente
-    print('Potência de {} ao exponente {} = {}'.format(f, exponente, potenciaDoValor))
+    expoente = int(input('Expoente: '))
+    potenciaDoValor = f ** expoente
+    print('Potência de {} ao expoente {} = {}'.format(f, expoente, potenciaDoValor))
 
 def loga(g):
     logaDoValor = numpy.log(g)
@@ -60,7 +64,7 @@ else:
                 num8 = float(input('Número: '))
                 divisão(num7, num8)
             else:
-                outraOpcao = input('Escolha uma opção: raiz quadrada, potenciação, logaritmo natural, logaritmo na base 10 ou logaritmo na base 2: ')
+                outraOpcao = input('Escolha uma opção: raiz quadrada, raiz cúbica, potenciação, logaritmo natural, logaritmo na base 10 ou logaritmo na base 2: ')
                 if outraOpcao == 'raiz quadrada':
                     num9 = float(input('Número: '))
                     raiz(num9)
@@ -77,5 +81,9 @@ else:
                                 num12 = float(input('Número: '))
                                 loga10(num12)
                             else:
-                                num13 = float(input('Número: '))
-                                loga2(num13)
+                                if outraOpcao == 'raiz cúbica':
+                                    num13 = float(input('Número: '))
+                                    raizCub(num13)
+                                else:
+                                    num14 = float(input('Número: '))
+                                    loga2(num14)
