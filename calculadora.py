@@ -22,8 +22,9 @@ def raiz(e):
     print('Raiz quadrada de {} = {}'.format(e, raizDoValor))
 
 def potencia(f):
-    potenciaDoValor = f **2
-    print('Potência de {} = {}'.format(f, potenciaDoValor))
+    exponente = int(input('Exponente: '))
+    potenciaDoValor = f ** exponente
+    print('Potência de {} ao exponente {} = {}'.format(f, exponente, potenciaDoValor))
 
 def loga(g):
     logaDoValor = numpy.log(g)
@@ -37,7 +38,7 @@ def loga2(i):
     loga2DoValor = numpy.log10(i)
     print('Logaritmo de {} na base 2 = {}'.format(i, loga2DoValor))
 
-usuario = input('O que vai fazer hoje? Somar, subtrair, multiplicar ou dividir? (caso não for nenhuma das opções anteriores, digite \"outros\") ')
+usuario = input('O que vai fazer hoje, somar, subtrair, multiplicar ou dividir? (caso não for nenhuma das opções anteriores, digite \"outros\") ')
 
 if usuario == 'somar':
     num1 = float(input('Número: '))
