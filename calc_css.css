@@ -1,0 +1,17 @@
+@charset "UTF-8";
+h1, fieldset{
+    text-align: center;
+}
+body{
+    padding-left: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-right: 5rem;
+    background-color: sienna;
+}
+fieldset{
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
