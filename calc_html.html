@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./calc_css.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="./calc_javascript.js"></script>
+</head>
+<body>
+    <h1>CALCULADORA</h1>
+    <fieldset oninput="conta();">
+        <input type="number" name="num1" id="num1" placeholder="número"/>
+        <select name="opcionar" id="opcionar">
+            <option value="soma" id="soma">+</option>
+            <option value="subtração" id="subtração">-</option>
+            <option value="multiplicação" id="multiplicação">x</option>
+            <option value="divisão" id="divisão">:</option>
+        </select>
+        <input type="number" name="num2" id="num2" placeholder="número"/>
+        <select>
+            <option value="botao" id="botao">=</option>
+        </select>
+        <input type="number" name="resultado0" id="resultado0" placeholder="resultado" readonly/>
+    </fieldset>
+    <fieldset oninput="conta1();">
+        <legend>Outras opções abaixo:</legend>
+        <select name="outros" id="outros">
+            <option value="raiz2" id="raiz2">Raiz quadrada</option>
+            <option value="raiz3" id="raiz3">Raiz cúbica</option>
+            <option value="log" id="log">Logaritmo natural</option>
+            <option value="log10" id="log10">Logaritmo na base 10</option>
+            <option value="log2" id="log2">Logaritmo na base 2</option>
+        </select>
+        <input type="number" name="num3" id="num3" placeholder="número"/>
+        <select>
+            <option value="botao1" id="botao1">=</option>
+        <input type="number" name="resultado1" id="resultado1" placeholder="resultado" readonly/>
+        </fieldset>
+    <fieldset oninput="conta2();">
+        <legend>Potenciação:</legend>
+        <input type="number" name="num4" id="num4" placeholder="número"/>
+        <input type="number" name="expoente" id="expoente" placeholder="expoente"/>
+        <input type="number" name="resultado2" id="resultado2" placeholder="resultado" readonly/>
+    </fieldset>
+</body>
+</html>
